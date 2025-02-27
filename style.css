@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root { 
-    --green: #28af60;
+    --green: hwb(145 16% 31%);
     --black: #192a56;
     --light-color: #666;
     --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
@@ -47,10 +47,6 @@ section:nth-child(even){
     background: var(--green);
     letter-spacing: .1rem;
 }
-
-
-
-
 
 
 
@@ -205,23 +201,20 @@ header .icons #menu-bars {
 .dish-img {
     width: 6000px;  
     height: 600px; 
-    object-fit: cover; /* Ensures the image maintains aspect ratio */
-    border-radius: 10px; /* Optional: Adds rounded corners for better aesthetics */
+    object-fit: cover;
+    border-radius: 10px; 
 }
 
 #kfc-img {
-    width: 600px;  /* Set desired width */
-    height: 600px; /* Set desired height */
-    object-fit: cover; /* Keeps aspect ratio */
+    width: 600px; 
+    height: 600px; 
+    object-fit: cover; 
 }
 #spc-img {
-    width: 600px;  /* Set desired width */
-    height: 600px; /* Set desired height */
-    object-fit: cover; /* Keeps aspect ratio */
+    width: 600px; 
+    height: 600px;
+    object-fit: cover; 
 }
-
-
-
 
 
 
@@ -231,7 +224,7 @@ header .icons #menu-bars {
 
 @media (max-width: 991px) {
     html {
-        font-size: 55%;
+        font-size: 50%;
     }
     header {
         padding: 1rem 2rem;

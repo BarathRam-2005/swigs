@@ -76,7 +76,7 @@
     min-height: 450px; /* Increase height */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures spacing between image & text */
+    justify-content: space-between; 
 }
 
 .box img {
@@ -86,12 +86,12 @@
 }
 
 .box h1, .box h3 {
-    margin-top: 20px; /* Moves text lower */
-    font-size: 1.6rem; /* Adjust font size */
+    margin-top: 20px; 
+    font-size: 1.6rem; 
 }
 
 .box p {
-    margin-top: 10px; /* Moves description lower */
+    margin-top: 10px;
     font-size: 1.1rem;
 }
 
@@ -186,9 +186,7 @@ document.querySelectorAll(".box").forEach(box => {
 
     img.addEventListener("mouseover", () => {
         img.style.transform = "scale(1.1)";
-        img.style.transition = "transform 0.3s ease-in-out";
-        
-        // Increase font size & push text lower
+        img.style.transition = "transform 0.3s ease-in-out";      
         title.style.fontSize = "1.8rem";
         title.style.marginTop = "25px";
         desc.style.fontSize = "1.2rem";
@@ -196,9 +194,7 @@ document.querySelectorAll(".box").forEach(box => {
     });
 
     img.addEventListener("mouseout", () => {
-        img.style.transform = "scale(1)";
-        
-        // Reset text size and position
+        img.style.transform = "scale(1)"; 
         title.style.fontSize = "1.6rem";
         title.style.marginTop = "20px";
         desc.style.fontSize = "1.1rem";
@@ -231,12 +227,12 @@ document.querySelectorAll(".box").forEach(box => {
         let title = box.querySelector("h1, h3");  // Selects h1 or h3
         let desc = box.querySelector("p");
 
-        // Hover effect on image
+        
         img.addEventListener("mouseover", () => {
             img.style.transform = "scale(1.1)";
             img.style.transition = "transform 0.3s ease-in-out";
             
-            // Increase font size
+            
             title.style.fontSize = "1.8rem";
             title.style.transition = "font-size 0.3s ease-in-out";
             
@@ -247,7 +243,7 @@ document.querySelectorAll(".box").forEach(box => {
         img.addEventListener("mouseout", () => {
             img.style.transform = "scale(1)";
             
-            // Reset font size
+           
             title.style.fontSize = "1.5rem";
             desc.style.fontSize = "1rem";
         });
